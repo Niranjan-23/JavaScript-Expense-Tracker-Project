@@ -1,0 +1,119 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="track.css"/>
+        <script src="script.js"></script>
+    </head>
+    
+<body>
+        <header>
+            <div id="name">
+                <div class="expense-section"><br>
+                    <h1>E x p e n s e T r a c k e r</h1>
+                    <nav id="navi">
+                        <table>
+                            <tr>
+                                <td><a href="#entertainment">Entertainment Expense</a></td> 
+                                <td><a href="#travel">Travel Expense</a></td>
+                                <td><a href="#tourism">Tourism Expense</a></td>
+                                <td><a href="#" onclick="showTotalExpense()">Total Expense</a></td>
+                            </tr>
+                        </table>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <center>
+            <br><br>
+        <article>
+            <p>Welcome to the Expense Tracker, a tool designed to help you manage and track your spending in various categories such as entertainment, travel, and tourism. Simply navigate through the links to view and record your expenses in each section. Stay on top of your finances with ease and convenience!</p>
+        </article>
+        </center>
+
+        <div class="newflex">
+
+            <div id="entertainment" class="container">
+                <fieldset id="content" class="ente">
+                    <h2>Entertainment Expense</h2>
+                    <table>
+                        <tr>
+                            <td><label for="activity" id="lab">Activity type:</label></td>
+                            <td><input type="text" id="activity"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="activityamount" id="lab">Amount Spent:</label></td>
+                            <td><input type="text" id="activityamount"></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td >
+                                <button type="submit" onclick="storeExpense('entertainment','activity','activityamount')" value="Calculate" name="entertainmentcal">Insert</button>
+                            </td>
+                            <td >
+                                <button type="submit" onclick="showExpenses('entertainment')" value="Calculate" name="entertainmentcal">Show</button>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    
+                </fieldset>
+            </div>
+
+            <div id="travel" class="container">
+                <fieldset id="content" class="trav">
+                    <h2>Travel Expense</h2>
+                    <table>
+                        <tr>
+                            <td><label for="destiny" id="lab">Destiny:</label></td>
+                            <td><input type="text" id="destiny"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="destinyamount" id="lab">Amount Spent:</label></td>
+                            <td><input type="text" id="destinyamount"></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td >
+                                <button type="submit" onclick="storeExpense('travel','destiny','destinyamount')" value="Calculate" name="entertainmentcal">Insert</button>
+                            </td>
+                            <td >
+                                <button type="submit"  onclick="showExpenses('travel')" value="Calculate" name="entertainmentcal">Show</button>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                    
+                </fieldset>
+            </div>
+
+            <div id="tourism" class="container">
+                <fieldset id="content" class="tour">
+                    <h2>Tourism Expense</h2>
+                    <table>
+                        <tr>
+                            <td><label for="place" id="lab">Place:</label></td>
+                            <td><input type="text" id="place"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="placeamount" id="lab">Amount Spent:</label></td>
+                            <td><input type="text" id="placeamount"></td>
+                        </tr>
+                        <tr><td><br></td></tr>
+                        <tr>
+                            <td >
+                                <button type="submit" onclick="storeExpense('tourism','place','placeamount')" value="Calculate" name="entertainmentcal">Insert</button>
+                            </td>
+                            <td >
+                                <button type="submit" onclick="showExpenses('tourism')" value="Calculate" name="entertainmentcal">Show</button>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </fieldset>
+            </div>
+        </div>
+</body>
+</html>

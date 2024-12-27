@@ -1,0 +1,189 @@
+body {
+    background-color: rgb(242, 237, 198);
+    margin: 0;
+    height: 100vh; 
+}
+
+#name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Garamond',serif ;
+    font-size:larger;
+    color: rgba(255, 255, 255, 0.7);
+    background-image:url("https://images.pexels.com/photos/7654426/pexels-photo-7654426.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    object-fit: contain;
+    font-weight:bolder;
+    text-align: center;
+}
+div{
+   height: 200px; 
+}
+#navi table {
+    margin: 0 auto; 
+}
+
+#navi a {
+    font-family: 'Garamond',serif;
+    text-decoration: none; 
+    color: rgb(255, 255, 255); 
+    font-size: 20px; 
+    padding: 10px 12px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+#navi a:hover {
+    background-color: #4fc75f;
+}
+
+p{
+    
+    display:flexbox;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    width:70%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Papyrus', sans-serif;
+    padding:20px ;
+    font-size: 25px;
+}
+
+
+#entertainment{
+    display: flexbox;
+    width:70%;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+}
+#travel{
+    display: flexbox;
+    width:70%;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+}
+#tourism{
+    display: flexbox;
+    width:70%;
+    justify-content: center;
+    align-items: center;
+    font-family: serif;
+    font-size: 25px;
+    align-items: center;
+    text-align: center;
+    margin:auto;
+}
+
+
+table{
+    align-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(201, 193, 193);
+    padding: 20px;
+    width: 80%; 
+    margin:auto; 
+    border-radius: 10px;
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 500px;
+}
+
+
+#lab{
+   font-family: Candara, Calibri, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+   font-size: 30px;
+   font-weight: 500px;
+   color: beige;
+
+}
+
+#newflex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container{
+    display: flex;
+    padding: 50px;
+    padding-bottom: 400px;
+}
+.ente{
+    background-image:url("https://images.pexels.com/photos/16061970/pexels-photo-16061970/free-photo-of-amusement-park-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/2247677/pexels-photo-2247677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.trav{
+    background-image:url("https://images.pexels.com/photos/3651846/pexels-photo-3651846.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/24589257/pexels-photo-24589257/free-photo-of-people-and-cars-on-street-in-taipei.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/16061970/pexels-photo-16061970/free-photo-of-amusement-park-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/2247677/pexels-photo-2247677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.tour{
+    background-image:url("https://images.pexels.com/photos/7449446/pexels-photo-7449446.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/16061970/pexels-photo-16061970/free-photo-of-amusement-park-at-night.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1https://images.pexels.com/photos/2247677/pexels-photo-2247677.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+input{
+    border-radius: 5px;
+    transition: width 0.4s ease-in-out;
+    padding:5px;
+}
+
+
+button {
+  background-color: #c2fbd7;
+  border-radius: 10px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding:7px 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 15px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+button {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
